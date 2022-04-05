@@ -30,47 +30,25 @@ public class Puppy {
     }
  }
 
+/* looping WHILE */
 
-/*contoh looping if-else */
-package percabangan;
-public class Percabangan {
-    public static void main(String[] args) {
-        int x=3;
-        if(x==1){
-            System.out.println("nilai x = 1");
-        }
-        else if(x==2){
-            System.out.println("nilai x = 2");
-        }else if(x==3){
-            System.out.println("nilai x = 3");
-        }else{
-            System.out.println("nilai x tidak diketahui");
-        }
-    }
+ public class Perulangan_While {
+    
+   public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       
+       System.out.print("Masukkan Kata yang ingin di Ulang/Loop : ");
+       String kata = sc.next();
+       int i = 0; //Inisialisasi batas dasar
+       while(i < 10){
+           System.out.println(kata);
+           i+=2;//Faktor pengulang Increment
+       }
+   }
+   
 }
 
-/* switch case */
-package percabangan;
-public class Percabangan {
-    public static void main(String[] args) {
-        int x=3;
-        switch (x){
-            case 1:
-                System.out.println("nilai x = 1");
-                break;
-            case 2:
-                System.out.println("nilai x = 2");
-                break;
-            case 3:
-                System.out.println("nilai x = 3");
-                break;
-            default:
-                System.out.println("nilai a tidak di katahui");
-        }
-    }
-}
-
-/* FOR */
+/* looping FOR */
 public class Perulangan_For {
     
    public static void main(String[] args) {
@@ -89,19 +67,20 @@ public class Perulangan_For {
    
 }
 
-/* WHILE */
-public class Perulangan_While {
-    
-   public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
-       
-       System.out.print("Masukkan Kata yang ingin di Ulang/Loop : ");
-       String kata = sc.next();
-       int i = 0; //Inisialisasi batas dasar
-       while(i < 10){
-           System.out.println(kata);
-           i+=2;//Faktor pengulang Increment
-       }
-   }
-   
+/* looping if-else */
+package percabangan;
+public class Percabangan {
+    public static void main(String[] args) {
+        int x=3;
+        if(x==1){
+            System.out.println("nilai x = 1");
+        }
+        else if(x==2){
+            System.out.println("nilai x = 2");
+        }else if(x==3){
+            System.out.println("nilai x = 3");
+        }else{
+            System.out.println("nilai x tidak diketahui");
+        }
+    }
 }
