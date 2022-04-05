@@ -29,3 +29,79 @@ public class Puppy {
        System.out.println("Variable Value :" + myPuppy.puppyAge );
     }
  }
+
+
+/*contoh looping if-else */
+package percabangan;
+public class Percabangan {
+    public static void main(String[] args) {
+        int x=3;
+        if(x==1){
+            System.out.println("nilai x = 1");
+        }
+        else if(x==2){
+            System.out.println("nilai x = 2");
+        }else if(x==3){
+            System.out.println("nilai x = 3");
+        }else{
+            System.out.println("nilai x tidak diketahui");
+        }
+    }
+}
+
+/* switch case */
+package percabangan;
+public class Percabangan {
+    public static void main(String[] args) {
+        int x=3;
+        switch (x){
+            case 1:
+                System.out.println("nilai x = 1");
+                break;
+            case 2:
+                System.out.println("nilai x = 2");
+                break;
+            case 3:
+                System.out.println("nilai x = 3");
+                break;
+            default:
+                System.out.println("nilai a tidak di katahui");
+        }
+    }
+}
+
+/* FOR */
+public class Perulangan_For {
+    
+   public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+      
+       System.out.print("Masukkan berapa banyak kata ingin di Ulang/Loop : ");
+       int banyak =  sc.nextInt();
+       
+       System.out.print("Masukkan Kata yang ingin di Ulang/Loop : ");
+       String kata = sc.next();
+       
+       for (int i = 0; i <= banyak; i++) {
+           System.out.println(kata);
+       }
+   }
+   
+}
+
+/* WHILE */
+public class Perulangan_While {
+    
+   public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       
+       System.out.print("Masukkan Kata yang ingin di Ulang/Loop : ");
+       String kata = sc.next();
+       int i = 0; //Inisialisasi batas dasar
+       while(i < 10){
+           System.out.println(kata);
+           i+=2;//Faktor pengulang Increment
+       }
+   }
+   
+}
